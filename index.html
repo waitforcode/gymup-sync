@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="GymUp Sync is a personal desktop integration that downloads GymUp backups from Google Drive and imports workout records locally.">
+  <title>GymUp Sync — Personal workout backup integration</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="index.html">GymUp Sync</a>
+      <nav aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Overview</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+    </header>
+    <main id="main">
+      <p class="eyebrow">Personal desktop integration</p>
+      <h1>Keep your workout<br>history locally.</h1>
+      <p class="lead">GymUp Sync downloads your GymUp backups from Google Drive and imports your workout history on your own computer.</p>
+      <div class="text">
+        <h2>How it works</h2>
+        <ol>
+          <li>GymUp creates backups in your Google Drive account.</li>
+          <li>You authorize a locally installed rclone client to read the backup folder.</li>
+          <li>The sync tool downloads and validates a backup, then imports workouts, exercises and sets into local files. It can run on a schedule on your computer.</li>
+        </ol>
+        <div class="notice">
+          <p><strong>About the Google permission</strong></p>
+          <p>The requested <code>drive.readonly</code> permission allows reading files across your Google Drive. The sync tool is configured to use the GymUp backup folder. It downloads files and does not upload, edit or delete files in Drive.</p>
+        </div>
+        <h2>Where your data goes</h2>
+        <p>Downloaded backups and imported workout records are stored on your computer. This information website does not receive workout files or Google credentials.</p>
+        <p>This integration is operated by its account owner for personal use. It is independent of the developers of GymUp, Google Drive and rclone.</p>
+        <div class="links">
+          <a href="privacy.html">Read the privacy policy</a>
+          <a href="terms.html">Read the terms of use</a>
+        </div>
+        <h2>Contact</h2>
+        <p>For questions about this integration, use the developer support email shown on its Google authorization screen.</p>
+      </div>
+    </main>
+    <footer>
+      <p>GymUp Sync · Personal workout backup integration</p>
+      <p><a href="privacy.html">Privacy policy</a> · <a href="terms.html">Terms of use</a></p>
+    </footer>
+  </div>
+</body>
+</html>

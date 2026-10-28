@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How GymUp Sync accesses Google Drive backups, processes workout records locally, and handles credentials and retention.">
+  <title>Privacy policy — GymUp Sync</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="index.html">GymUp Sync</a>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Overview</a>
+        <a href="privacy.html" aria-current="page">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+    </header>
+    <main id="main" class="text">
+      <p class="eyebrow">Data practices</p>
+      <h1>Privacy policy</h1>
+      <p class="meta">Effective date: October 28, 2026</p>
+      <p>This policy describes GymUp Sync, a personal desktop integration operated by its account owner, and this information website.</p>
+      <h2>Google data accessed</h2>
+      <p>With your authorization, the locally installed rclone client accesses Google Drive file metadata and downloads backups from the configured GymUp folder. Metadata includes file names, identifiers, sizes, modification times and checksums.</p>
+      <p>Backup contents can include workout dates, exercise names, repetitions, loads, notes and other records stored by GymUp.</p>
+      <p>The <code>drive.readonly</code> OAuth scope permits reading files throughout your Drive. Selecting a folder in the sync configuration limits the tool's operation, not the permission granted by Google. The integration does not upload, modify or delete Drive files.</p>
+      <h2>Purpose and processing</h2>
+      <p>The data is used to maintain local backup copies and a local workout history. The importer validates backups and produces workout and set records. It may use body-weight measurements already stored locally to estimate volume for bodyweight exercises.</p>
+      <p>The sync process does not use Google data for advertising, resale or profiling, and has no AI or model-training component.</p>
+      <h2>Storage and sharing</h2>
+      <p>Backups and derived records are stored on the account owner's computer. OAuth credentials and tokens are kept in the local rclone configuration, separate from the website and source repository. Requests to Google use HTTPS.</p>
+      <p>The sync process does not send downloaded workout data to a hosted application server, this website, analytics providers or advertising services. Access by other software that the owner chooses to use with local files is controlled by the owner and that software's settings.</p>
+      <p>Google API data is handled in accordance with the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a> and its Limited Use requirements.</p>
+      <h2>Retention and your control</h2>
+      <p>Local backups and imported records remain until the account owner deletes them. There is no automatic retention deadline for original backups.</p>
+      <p>You can stop the local scheduled job and revoke the application's authorization in <a href="https://myaccount.google.com/connections">Google Account connections</a>. Revoking access does not remove copies already downloaded. To remove those copies, delete the local backup and processed-data files; credentials can be removed from the local rclone configuration.</p>
+      <h2>This website</h2>
+      <p>These static pages contain no analytics, advertising, submission forms or third-party scripts, and set no application cookies. When served through GitHub Pages, GitHub may process ordinary request metadata under its <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">privacy statement</a>. Workout backups and OAuth credentials are not sent to this website.</p>
+      <h2>Contact and changes</h2>
+      <p>For questions about the application or deletion of local data, contact the operator using the developer support email shown on the Google authorization screen.</p>
+      <p>Changes to these data practices will be reflected here with an updated effective date. Any additional Google permissions must be explicitly authorized.</p>
+    </main>
+    <footer>
+      <p>GymUp Sync · Personal workout backup integration</p>
+      <p><a href="index.html">Overview</a> · <a href="terms.html">Terms of use</a></p>
+    </footer>
+  </div>
+</body>
+</html>
